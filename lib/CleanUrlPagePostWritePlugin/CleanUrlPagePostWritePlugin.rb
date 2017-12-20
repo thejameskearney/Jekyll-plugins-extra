@@ -1,5 +1,10 @@
 # CleanUrlPagePostWritePlugin - a page post-write hook plugin to allow for clean permalinks to html pages
 #
+# As of Jekyll 3.6.2, there did not seem to be a way to add a hook to modify the file
+# extension for HTML files before they were written during site generation. This plugin
+# looks for HTML files (*.html or *.htm) that have already been written to disk, and renames
+# them if they have a clean (exensionless) permalink set in the YAML front matter.
+#
 # Copyright 2017 James Kearney
 # License: MIT License
 #
